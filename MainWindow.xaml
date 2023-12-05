@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfAppcarRacing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppcarRacing"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="600">
+    <Canvas Background="Gray" Name="myCanvas" Focusable="True" KeyDown="OnKeyDown" KeyUp="OnKeyUP">
+        <Rectangle Height="106" Width="20" Fill="White" Tag="roadMarks" Canvas.Left="237" Canvas.Top="-152" />
+        <Rectangle Height="106" Width="20" Fill="White" Tag="roadMarks" Canvas.Left="237" Canvas.Top="10" />
+        <Rectangle Height="106" Width="20" Fill="White" Tag="roadMarks" Canvas.Left="237" Canvas.Top="176" />
+        <Rectangle Height="106" Width="20" Fill="White" Tag="roadMarks" Canvas.Left="237" Canvas.Top="348" />
+        <Rectangle Width="55" Height="80" Canvas.Left="90" Canvas.Top="56">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Image/car1.png" />
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Width="55" Height="80" Canvas.Left="381" Canvas.Top="286">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Image/car2.png" />
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Width="55" Height="80" Canvas.Left="122" Canvas.Top="174">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Image/car3.png" />
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label Name="scoreText" Content="Survived: 00 Seconds" FontSize="18" FontWeight="Bold" />
+    </Canvas>
+</Window>
